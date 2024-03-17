@@ -1,5 +1,6 @@
 // Start of the code for Mixed Messges project from Codecademy
 
+//Array of movies in order to match the characters and movie quotes below.
 const movie = [
 "Star Wars", 
 "Titanic", 
@@ -12,7 +13,7 @@ const movie = [
 "The Terminator",
 "Top Gun"
 ]
-
+//Array of characters in order to match the movie and movie quotes above and below.
 const character = [
 "Obi-Wan Kenobi", 
 "Jack Dawson", 
@@ -25,7 +26,7 @@ const character = [
 "Terminator",
 "Maverick"
 ]
-
+//Array of movie quotes in order to match the characters and movies above.
 const movieQuote = [
 "May the Force be with you.", 
 "I'm the king of the world!",
@@ -39,10 +40,11 @@ const movieQuote = [
 "I feel the need - the need for speed!"
 ]
 
+// function to create a random number based on the array length and return the random indexes for each into a console.log
 function randomGenerator(movie, character, movieQuote) {
     let movieChoice = movie[(Math.floor(Math.random()*movie.length))];
-    let characterChoice = character[(Math.floor(Math.random()*movie.length))];
-    let movieQuoteChoice = movieQuote[(Math.floor(Math.random()*movie.length))];
+    let characterChoice = character[(Math.floor(Math.random()*character.length))];
+    let movieQuoteChoice = movieQuote[(Math.floor(Math.random()*movieQuote.length))];
 
 
     console.log(
